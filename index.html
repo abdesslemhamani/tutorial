@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child and Eagle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Fantasy World</h1>
+    </header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div id="home" class="slider">
+      <div class="slider-container">
+        <div class="slider-images" id="slider-images">
+          <img src="assets/images/fantasy.webp" alt="Fantasy image" />
+          <img src="assets/images/mythology.webp" alt="Mythology image" />
+        </div>
+        <div class="controls">
+          <button class="control" onclick="prevSlide()">&#10094;</button>
+          <button class="control" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>
+        Welcome to the Fantasy World! Our mission is to bring to life the myths,
+        legends, and tales of ancient times. Whether you're drawn to the power
+        of gods, the heroism of mortals, or the mystery of mythical creatures,
+        this is the place where imagination soars. Dive into our galleries and
+        explore the magical universe.
+      </p>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Fantasy World. All rights reserved.</p>
+    </footer>
+
+    <script src="slide.js"></script>
+  </body>
+</html>
